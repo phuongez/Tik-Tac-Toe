@@ -1,0 +1,35 @@
+.board {
+    display: grid;
+    height: 500px;
+    width: 500px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    gap: 2px;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid grey;
+    background: rgb(244, 244, 244);
+    cursor: pointer;
+  }
+
+  .replay {
+    position: relative;
+    left: 250px;
+    background-color: black;
+    color: white;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 0;
+    display: none;
+  }
